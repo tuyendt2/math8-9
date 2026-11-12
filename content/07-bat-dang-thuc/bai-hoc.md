@@ -41,7 +41,8 @@ Từ (B4), cộng thêm vào hai vế:
 - **(B5)** $(a + b + c)^2 \ge 3(ab + bc + ca)$ (cộng $2(ab + bc + ca)$);
 - **(B6)** $3(a^2 + b^2 + c^2) \ge (a + b + c)^2$ (cộng $2(a^2 + b^2 + c^2)$).
 
-Chuỗi quan trọng: $\boxed{3(a^2 + b^2 + c^2) \ge (a + b + c)^2 \ge 3(ab + bc + ca)}$.
+Chuỗi quan trọng:
+$$\boxed{3(a^2 + b^2 + c^2) \ge (a + b + c)^2 \ge 3(ab + bc + ca)}$$
 
 **(B7)** $(ab + bc + ca)^2 \ge 3abc(a + b + c)$. *Chứng minh:* áp dụng (B5) cho ba số $x = ab$, $y = bc$, $z = ca$: $(x + y + z)^2 \ge 3(xy + yz + zx)$, và $xy + yz + zx = ab^2c + bc^2a + ca^2b = abc(a + b + c)$.
 

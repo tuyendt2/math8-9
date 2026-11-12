@@ -165,3 +165,35 @@ details.k > .content { padding: 0 16px 12px; border-top: 1px solid var(--line); 
 .notice { padding: 10px 14px; border-radius: 12px; background: var(--brand-soft); font-size: .92em; }
 .foot { text-align: center; color: var(--muted); font-size: .8em; margin-top: 30px; }
 .foot button { background: none; border: 0; color: var(--bad); text-decoration: underline; cursor: pointer; font-size: inherit; }
+
+/* Home */
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
+.grid3 b { display: block; font-size: 1.5em; line-height: 1.2; color: var(--brand); }
+.grid3 span { font-size: .78em; color: var(--muted); }
+.tile.hero { margin: 12px 0; border-color: var(--brand); background: var(--brand-soft); }
+.tile .grow { flex: 1; min-width: 0; }
+.tile .grow > span { display: block; }
+.progress.thin { height: 5px; margin-top: 6px; }
+.tile .badge-count.warn { background: var(--warn); }
+
+/* Exams */
+.elist a { display: flex; gap: 12px; align-items: center; text-decoration: none; color: var(--text); padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.elist a:last-child { border-bottom: 0; }
+.elist .pn { font-weight: 700; min-width: 3.4em; }
+.elist .pt { flex: 1; min-width: 0; }
+.countdown {
+  position: sticky; top: calc(env(safe-area-inset-top) + 56px); z-index: 4;
+  margin: 0 -14px 10px; padding: 10px 14px; text-align: center;
+  background: var(--brand-soft); border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums;
+}
+.countdown.late { background: var(--bad-soft); color: var(--bad); }
+.exam-q .q-head { font-weight: 700; color: var(--brand); }
+.scores { display: flex; gap: 8px; margin: 10px 0 6px; }
+.scores .btn { flex: 1; min-height: 42px; }
+.scores .btn.on { background: var(--brand); border-color: var(--brand); color: #fff; }
+:root[data-theme="dark"] .scores .btn.on { color: #11141b; }
+.scorecard { text-align: center; }
+.scorecard b { font-size: 2.4em; color: var(--brand); }
+.scorecard span { color: var(--muted); }
+.hrow { display: flex; justify-content: space-between; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.hrow:last-child { border-bottom: 0; }
