@@ -6,6 +6,7 @@
 - **Kiến thức:** từng mục có chứng minh, dạng mục thu gọn.
 - **Thẻ ghi nhớ:** 207 thẻ công thức, ôn theo lịch ngắt quãng (1, 3, 7, 14, 30 ngày), có chế độ "Ôn thẻ hôm nay" gộp mọi chủ đề, mỗi lượt 20 thẻ.
 - **Bài tập:** 108 bài, mỗi bài có ý tưởng chính, 2 gợi ý, lời giải đầy đủ, đồng hồ đếm thời gian và tự đánh giá (bài chưa làm được sẽ được hẹn làm lại).
+- **Hình vẽ:** 9 bài hình học và câu hình của 10 đề có hình minh họa đúng tỉ lệ (ẩn mặc định để tự vẽ trước).
 - **Đề thi thử:** 10 đề × 10 câu, bấm giờ 150 phút (vẫn chạy khi thoát app), nộp bài rồi tự chấm từng câu, lưu lịch sử điểm.
 - Dùng được khi không có mạng, có giao diện tối, chỉnh được cỡ chữ. Tiến độ lưu trên máy, không cần tài khoản.
 
@@ -23,6 +24,7 @@ content/NN-ten-chu-de/
 content/11-de-thi-thu/   10 đề thi thử (chép từ tài liệu math8-9)
 src/               giao diện: index.html, app.js, style.css, sw.js, icon
 build.mjs          chuyển Markdown thành HTML, giữ công thức dạng TeX để KaTeX vẽ trên máy; ghi ra dist/
+scripts/figures.mjs  hình vẽ hình học: tọa độ tính từ cách dựng hình, xuất SVG
 scripts/sync.mjs   chép lại bài học và đề thi từ thư mục ../math8-9 khi tài liệu gốc thay đổi
 ```
 

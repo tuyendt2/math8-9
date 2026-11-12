@@ -282,6 +282,7 @@
         <span class="stars">${stars(p.level)}</span><span class="timer" id="timer">⏱ ${clock(Date.now() - view.opened)}</span></div>
       <div class="card content">${p.statement}</div>
       ${st ? `<p class="small muted">Lần trước: ${STATUS[st.status].label} (${date(st.at)})${st.review ? ` · hẹn làm lại ${date(st.review)}` : ""}</p>` : `<p class="notice">Chép đề ra giấy và tự làm ít nhất 20 phút trước khi mở gợi ý.</p>`}
+      ${p.figures ? revealBlock("fig", "📐 Hình vẽ (tự vẽ trước rồi mới mở)", p.figures, "figblk") : ""}
       ${revealBlock("idea", "💡 Ý tưởng chính", p.idea, "idea")}
       ${p.hints.map((h, k) => revealBlock(`h${k}`, `🔎 Gợi ý ${k + 1}`, h)).join("")}
       ${revealBlock("sol", "📖 Lời giải đầy đủ", p.solution, "sol")}
@@ -368,6 +369,7 @@
         const t = TOPIC[q.topic];
         return `<div class="card exam-q"><div class="q-head">Câu ${q.n}${q.tag ? ` <span class="muted small">· ${q.tag}</span>` : ""}</div>
           <div class="content">${q.statement}</div>
+          ${q.figures ? revealBlock(`e${n}f${q.n}`, "📐 Hình vẽ", q.figures, "figblk") : ""}
           ${revealBlock(`e${n}q${q.n}`, "📖 Lời giải", q.solution, "sol")}
           <div class="scores">${[0, 0.5, 1].map((v) => `<button class="btn ${sc === v ? "on" : ""}" data-act="score" data-q="${q.n}" data-v="${v}">${v === 0.5 ? "½" : v} đ</button>`).join("")}</div>
           ${sc !== undefined && sc < 1 && t ? `<a class="small" href="#/t/${t.id}">Ôn lại chủ đề ${t.number}: ${t.short} →</a>` : ""}

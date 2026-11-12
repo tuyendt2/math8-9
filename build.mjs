@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 import MarkdownIt from "markdown-it";
 import { tex } from "@mdit/plugin-tex";
 import katexLib from "katex";
+import { FIGURES } from "./scripts/figures.mjs";
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const contentDir = path.join(root, "content");
@@ -50,6 +51,8 @@ function render(src, at) {
   where = at;
   return md.render(relink(src.replace(/<!--[\s\S]*?-->/g, "")).trim());
 }
+const figHtml = (figs) =>
+  figs?.length ? `<div class="figs">${figs.map((f) => `<figure class="fig">${f.svg}${f.caption ? `<figcaption>${f.caption}</figcaption>` : ""}</figure>`).join("")}</div>` : "";
 // Split text on a heading regex (needs the g flag); returns [{m, body}].
 function sections(src, re) {
   const ms = [...src.matchAll(re)];
@@ -110,6 +113,7 @@ function buildTopic(dir) {
       idea: render(h.idea, w + " ý tưởng"),
       hints: h.hints.map((x, i) => render(x, `${w} gợi ý ${i + 1}`)),
       solution: render(solutions[n], w + " lời giải"),
+      figures: figHtml(FIGURES.topics[id]?.[n]),
     };
   });
   const extra = Object.keys(hints).filter((n) => !problems.some((p) => p.n === +n));
@@ -161,6 +165,7 @@ function buildExams() {
           topic: topicId(topicDirs[+q - 1] || ""),
           statement: render(s.body, `đề ${n} câu ${q}`),
           solution: render(sols[q], `đề ${n} câu ${q} lời giải`),
+          figures: q === "9" ? figHtml(FIGURES.exams[n]) : "",
         };
       });
       return { n, note: notes[n] ? (where = `đề ${n} ghi chú`, md.renderInline(notes[n])) : "", questions };
