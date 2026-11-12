@@ -49,7 +49,10 @@ function relink(src) {
 }
 function render(src, at) {
   where = at;
-  return md.render(relink(src.replace(/<!--[\s\S]*?-->/g, "")).trim());
+  // Figures in the source Markdown (hinh/*.svg + caption line) are shown by the
+  // app's own figure block, so they are dropped here.
+  const text = src.replace(/<!--[\s\S]*?-->/g, "").replace(/!\[[^\]]*\]\(hinh\/[^)]+\)\n\*Hình:[^\n]*\*\n?/g, "");
+  return md.render(relink(text).trim());
 }
 const figHtml = (figs) =>
   figs?.length ? `<div class="figs">${figs.map((f) => `<figure class="fig">${f.svg}${f.caption ? `<figcaption>${f.caption}</figcaption>` : ""}</figure>`).join("")}</div>` : "";

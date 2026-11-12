@@ -1,6 +1,6 @@
 # Chủ đề 9. Hình học phẳng
 
-> Khi làm bài, **luôn tự vẽ hình** theo đề bài. Lời giải dưới đây mô tả hình bằng lời; nên vẽ hình chính xác bằng thước và compa, hoặc dùng GeoGebra.
+> Khi làm bài, **luôn tự vẽ hình** theo đề bài, bằng thước và compa hoặc bằng GeoGebra. Mỗi lời giải có một hình minh họa đúng tỉ lệ ở đầu (nét đứt là đường phụ, nét xanh là các đoạn chính cần chú ý); hãy tự vẽ trước rồi mới so sánh.
 
 ## I. Kiến thức cần nắm
 
@@ -147,6 +147,9 @@ b) Chứng minh $AH = 2OM$.
 ## III. Lời giải chi tiết
 
 ### Bài 1
+![Phân giác AD, E là giao điểm thứ hai với đường tròn ngoại tiếp](hinh/bai-1.svg)
+*Hình: Phân giác AD, E là giao điểm thứ hai với đường tròn ngoại tiếp.*
+
 Gọi $E$ là giao điểm thứ hai của tia $AD$ với đường tròn ngoại tiếp tam giác $ABC$.
 - Xét tam giác $ABD$ và tam giác $AEC$: $\widehat{BAD} = \widehat{EAC}$ (vì $AD$ là phân giác) và $\widehat{ABD} = \widehat{ABC} = \widehat{AEC}$ (hai góc nội tiếp cùng chắn cung $AC$). Do đó $\triangle ABD \sim \triangle AEC$ (g.g).
 - Suy ra $\frac{AB}{AE} = \frac{AD}{AC}$, tức là $AB\cdot AC = AD\cdot AE = AD(AD + DE) = AD^2 + AD\cdot DE$.
@@ -155,6 +158,9 @@ Gọi $E$ là giao điểm thứ hai của tia $AD$ với đường tròn ngoạ
 Vậy $AD^2 = AB\cdot AC - DB\cdot DC$.
 
 ### Bài 2
+![AN = 2NC; kẻ thêm MK song song với BN](hinh/bai-2.svg)
+*Hình: AN = 2NC; kẻ thêm MK song song với BN.*
+
 **Áp dụng Menelaus cho tam giác $AMC$ với đường thẳng $B, I, N$:** ($B$ nằm trên đường thẳng $MC$, $I$ trên $AM$, $N$ trên $CA$)
 $$\frac{IA}{IM}\cdot\frac{BM}{BC}\cdot\frac{NC}{NA} = 1 \iff \frac{IA}{IM}\cdot\frac12\cdot\frac12 = 1 \iff \frac{AI}{IM} = 4.$$
 
@@ -164,6 +170,9 @@ $$\frac{IB}{IN}\cdot\frac{AN}{AC}\cdot\frac{MC}{MB} = 1 \iff \frac{IB}{IN}\cdot\
 > **Cách không dùng Menelaus:** kẻ $MK \parallel BN$ với $K \in AC$. Vì $M$ là trung điểm $BC$ nên $K$ là trung điểm $NC$, do đó $NK = \frac12 NC = \frac14 AN$. Theo Thales trong tam giác $AMK$: $\frac{AI}{IM} = \frac{AN}{NK} = 4$.
 
 ### Bài 3
+![Ba đoạn AD, BE, CF đi qua điểm M trong tam giác](hinh/bai-3.svg)
+*Hình: Ba đoạn AD, BE, CF đi qua điểm M trong tam giác.*
+
 **a)** Hai tam giác $MBC$ và $ABC$ có chung đáy $BC$. Kẻ $MM' \perp BC$ và $AA' \perp BC$, ta có $MM' \parallel AA'$ nên theo Thales:
 $$\frac{S_{MBC}}{S_{ABC}} = \frac{MM'}{AA'} = \frac{MD}{AD}.$$
 Tương tự $\frac{ME}{BE} = \frac{S_{MCA}}{S_{ABC}}$ và $\frac{MF}{CF} = \frac{S_{MAB}}{S_{ABC}}$. Cộng lại:
@@ -174,6 +183,9 @@ $$\frac{AM}{MD} + \frac{BM}{ME} + \frac{CM}{MF} = \frac1x + \frac1y + \frac1z - 
 Dấu "=" khi $x = y = z = \frac13$, tức là $S_{MBC} = S_{MCA} = S_{MAB}$, khi đó $M$ là **trọng tâm** tam giác $ABC$.
 
 ### Bài 4
+![Ba đường cao AD, BE, CF và tam giác DEF](hinh/bai-4.svg)
+*Hình: Ba đường cao AD, BE, CF và tam giác DEF.*
+
 - Tứ giác $BFHD$ có $\widehat{BFH} + \widehat{BDH} = 90^\circ + 90^\circ = 180^\circ$ nên nội tiếp, suy ra $\widehat{HDF} = \widehat{HBF}$ (cùng chắn cung $HF$), tức là $\widehat{HDF} = \widehat{EBA}$.
 - Tương tự, tứ giác $CEHD$ nội tiếp nên $\widehat{HDE} = \widehat{HCE} = \widehat{FCA}$.
 - Trong tam giác vuông $ABE$: $\widehat{EBA} = 90^\circ - \widehat{A}$. Trong tam giác vuông $ACF$: $\widehat{FCA} = 90^\circ - \widehat{A}$.
@@ -181,6 +193,9 @@ Dấu "=" khi $x = y = z = \frac13$, tức là $S_{MBC} = S_{MCA} = S_{MAB}$, kh
 Do đó $\widehat{HDF} = \widehat{HDE}$, tức là $DH$ là phân giác của góc $EDF$. Chứng minh tương tự, $EH$ là phân giác của góc $DEF$. Vậy $H$ là giao điểm hai đường phân giác, chính là tâm đường tròn nội tiếp tam giác $DEF$.
 
 ### Bài 5
+![Hai tiếp tuyến MA, MB và cát tuyến MCD](hinh/bai-5.svg)
+*Hình: Hai tiếp tuyến MA, MB và cát tuyến MCD.*
+
 **a)** Xét tam giác $MAC$ và tam giác $MDA$: chung góc $M$; $\widehat{MAC} = \widehat{MDA}$ (góc tạo bởi tiếp tuyến và dây cung bằng góc nội tiếp cùng chắn cung $AC$). Do đó $\triangle MAC \sim \triangle MDA$ (g.g), suy ra $\frac{MA}{MD} = \frac{MC}{MA}$, tức là $MA^2 = MC\cdot MD$.
 
 **b)** $\widehat{MAO} = \widehat{MBO} = 90^\circ$ (tính chất tiếp tuyến). Vì $I$ là trung điểm dây $CD$ không qua tâm nên $OI \perp CD$, tức là $\widehat{MIO} = 90^\circ$. Ba điểm $A, I, B$ cùng nhìn đoạn $MO$ dưới góc vuông, nên $M, A, I, O, B$ cùng thuộc đường tròn đường kính $MO$.
@@ -190,6 +205,9 @@ Kết hợp với a): $MC\cdot MD = MH\cdot MO$, tức là $\frac{MC}{MO} = \fra
 Góc $\widehat{MHC}$ là góc ngoài tại đỉnh $H$ của tứ giác $CHOD$ và bằng góc trong tại đỉnh đối diện $D$. Vậy tứ giác $CHOD$ nội tiếp.
 
 ### Bài 6
+![Trực tâm H, trung điểm M của BC, A' đối xứng với A qua O](hinh/bai-6.svg)
+*Hình: Trực tâm H, trung điểm M của BC, A' đối xứng với A qua O.*
+
 **a)** Kẻ tiếp tuyến $Ax$ của $(O)$ tại $A$, chọn tia $Ax$ nằm khác phía với $C$ so với đường thẳng $AB$.
 - $\widehat{xAB} = \widehat{ACB}$ (góc tạo bởi tiếp tuyến và dây cung).
 - Tứ giác $BCEF$ nội tiếp đường tròn đường kính $BC$ (vì $\widehat{BEC} = \widehat{BFC} = 90^\circ$), nên $\widehat{AFE} = \widehat{ACB}$ (góc ngoài bằng góc trong đối diện).
@@ -203,6 +221,9 @@ Suy ra $\widehat{xAB} = \widehat{AFE}$. Hai góc này ở vị trí so le trong,
 Vậy $BHCA'$ là hình bình hành, nên trung điểm $M$ của $BC$ cũng là trung điểm của $HA'$. Trong tam giác $AHA'$, $OM$ là đường trung bình (vì $O$ là trung điểm $AA'$ và $M$ là trung điểm $HA'$), nên $AH = 2OM$.
 
 ### Bài 7
+![Tứ giác nội tiếp ABCD; E trên BD với góc BAE bằng góc CAD](hinh/bai-7.svg)
+*Hình: Tứ giác nội tiếp ABCD; E trên BD với góc BAE bằng góc CAD.*
+
 **Chứng minh Ptolemy.** Cho tứ giác $ABCD$ nội tiếp. Lấy điểm $E$ trên đường chéo $BD$ sao cho $\widehat{BAE} = \widehat{CAD}$.
 - $\triangle ABE \sim \triangle ACD$ (g.g) vì $\widehat{BAE} = \widehat{CAD}$ và $\widehat{ABE} = \widehat{ABD} = \widehat{ACD}$ (cùng chắn cung $AD$). Suy ra $\frac{AB}{AC} = \frac{BE}{CD}$, tức là $AB\cdot CD = AC\cdot BE$. $\quad (1)$
 - Cộng thêm $\widehat{EAC}$ vào hai góc bằng nhau, ta được $\widehat{BAC} = \widehat{EAD}$. Ngoài ra $\widehat{ACB} = \widehat{ADB} = \widehat{ADE}$ (cùng chắn cung $AB$). Do đó $\triangle ABC \sim \triangle AED$ (g.g), suy ra $\frac{BC}{ED} = \frac{AC}{AD}$, tức là $AD\cdot BC = AC\cdot ED$. $\quad (2)$
@@ -212,6 +233,9 @@ Cộng (1) và (2): $AB\cdot CD + AD\cdot BC = AC(BE + ED) = AC\cdot BD$.
 **Áp dụng.** Tứ giác $ABMC$ nội tiếp (theo thứ tự đó). Theo Ptolemy: $AM\cdot BC = AB\cdot MC + AC\cdot MB$. Vì $AB = BC = CA$, chia hai vế cho $BC$ ta được $MA = MB + MC$.
 
 ### Bài 8
+![N là điểm chính giữa cung nhỏ AB; chu vi lớn nhất khi M ở vị trí M₀](hinh/bai-8.svg)
+*Hình: N là điểm chính giữa cung nhỏ AB; chu vi lớn nhất khi M ở vị trí M₀.*
+
 Gọi $N$ là điểm chính giữa của cung nhỏ $AB$ (cung không chứa $M$). Khi đó $NA = NB$, và $NA$ có độ dài cố định.
 Tứ giác $AMBN$ nội tiếp, theo Ptolemy:
 $$MN\cdot AB = MA\cdot NB + MB\cdot NA = NA(MA + MB) \implies MA + MB = \frac{AB}{NA}\cdot MN.$$
@@ -219,6 +243,9 @@ Vì $\frac{AB}{NA}$ không đổi và $MN \le 2R$ (dây cung không dài hơn đ
 Khi đó $M$ là điểm đối xứng với $N$ qua $O$, chính là **điểm chính giữa của cung lớn $AB$**. Vì $AB$ cố định, chu vi tam giác $MAB$ lớn nhất khi $M$ là điểm chính giữa cung lớn $AB$.
 
 ### Bài 9
+![Đường tròn nội tiếp các tam giác ABC, ABH, ACH](hinh/bai-9.svg)
+*Hình: Đường tròn nội tiếp các tam giác ABC, ABH, ACH.*
+
 Ba tam giác $ABC$, $HBA$, $HAC$ đều vuông (lần lượt tại $A$, $H$, $H$) và đồng dạng với nhau ($\widehat{B}$ chung với tam giác $HBA$, $\widehat{C}$ chung với tam giác $HAC$). Các cạnh huyền tương ứng là $BC$, $AB$, $AC$.
 Trong hai tam giác đồng dạng, tỉ số bán kính đường tròn nội tiếp bằng tỉ số đồng dạng, tức là bằng tỉ số hai cạnh huyền:
 $$\frac{r_1}{r} = \frac{AB}{BC}, \quad \frac{r_2}{r} = \frac{AC}{BC}.$$
